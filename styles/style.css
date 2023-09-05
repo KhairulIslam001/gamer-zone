@@ -18,7 +18,6 @@ nav {
     align-items: center;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-    height: ;
 }
 
 nav .nav-title {
@@ -69,22 +68,28 @@ nav li {
 /*header section starts from here*/
 header {
     background-color: #FFF;
-    background-image: url('../images/Group\ 14.png');
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: 50%;
-    fill: linear-gradient(235deg, rgba(140, 87, 238, 0.03) 3.9%, rgba(241, 68, 174, 0.03) 100.56%);
+
 }
 
 .header1 {
     display: flex;
-    gap: 374px;
-    margin: 0px 240px 55px 240px;
+    gap: 68px;
 }
 
 .header-left {
-    padding-top: 148px;
-    padding-bottom: 148px;
+    background-image: url('../images/Group\ 14.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.left{
+    padding: 148px 249px 148px 240px;
+}
+
+.header-right img {
+    padding-right: 240px;
 }
 
 .header-left h2 {
@@ -107,12 +112,17 @@ header {
     margin-bottom: 0px;
 }
 
-.header-left p {
+/* .header-left p {
     color: #534C64;
     font-size: 1.25rem;
     font-weight: 500;
     margin-top: 24px;
-    padding-left: 35px;
+} */
+.paragraph {
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 24px;
 }
 
 .pink-btn {
@@ -120,10 +130,11 @@ header {
     font-size: 1.25rem;
     font-weight: 600;
     padding: 21px 40px;
-    border-radius: 48px;
+    border-radius: 3em;
     background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
     border: none;
     margin-right: 24px;
+    margin-top: 20px;
 }
 
 .blue-btn {
@@ -135,4 +146,95 @@ header {
     border-radius: 48px;
     background: #4EC5F7;
     border: none;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+/* responsive section for large mobile */
+@media screen and (max-width:425px) {
+    * {
+        max-width: 425px;
+    }
+
+    nav,
+    .nav-list ul {
+        flex-direction: column;
+    }
+
+    .header1 {
+        flex-direction: column-reverse;
+        margin: 0px;
+        gap: 0px;
+    }
+
+    .header-left {
+        background-size: cover;
+        width: 100%;
+    }
+    .left{
+        padding: 0%;
+    }
+    .header-right img {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .header-left h2 {
+        margin-top: 0px;
+    }
+
+    .paragraph,
+    .red-btn,
+    .blue-btn {
+        margin-top: 0px;
+    }
+
+    nav {
+        padding: 20px;
+    }
+
+    .nav-title {
+        margin-top: 50px;
+    }
+
+    .nav-list ul {
+        margin: 0px;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    #option {
+        margin: 10px 0px;
+
+    }
+
+    #youtube {
+        margin: 0px;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+/* responsive section for tablet */
+@media screen and (min-width:425px) and (max-width:768px){
+    nav{
+        padding: 37px 5px;
+        text-align: center;
+    }
+    .header1{
+        flex-direction: column-reverse;
+    }
+    .header-right img{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .left{
+        padding: 20px;
+    }
 }
