@@ -183,6 +183,54 @@ header {
     font-weight: 600;
 }
 
+/* instant play section */
+.instant-play {
+    display: flex;
+    gap: 265px;
+    padding-left: 380px;
+    padding-right: 240px;
+    padding-top: 120px;
+    margin: 0px;
+}
+
+.instant-left {
+    text-align: right;
+    padding: 230px 0px 230px 0px;
+}
+
+.instant-title {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    margin-top: 0px;
+}
+
+.instant-title span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.instant-des {
+    color: #534C64;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.secondary {
+    position: relative;
+    bottom: 285px;
+    right: 150px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
 /* footer section starts from here */
 .footer {
     text-align: center;
@@ -269,7 +317,8 @@ header {
     }
 
     nav,
-    .nav-list ul {
+    .nav-list ul,
+    .instant-play {
         flex-direction: column;
     }
 
@@ -333,6 +382,38 @@ header {
 
 
     /* main section */
+
+    /* instant play */
+    .instant-play {
+        padding: 0px;
+        margin: 0px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .instant-left {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .main {
+        padding-left: 100px;
+        width: 300.833px;
+        height: 50px;
+    }
+    .secondary{
+        width: 159px;
+        height: 182.54;
+        position: relative;
+        left: 25px;
+        bottom: 160px;
+    }
+
+
+
+
+
     /* gaming option */
     .gaming-option {
         display: grid;
@@ -347,10 +428,12 @@ header {
         color: #0B0223;
         padding: 5px;
     }
+
     .g-option p {
         font-size: 0.65rem;
         font-weight: 600;
     }
+
     /* footer section */
     .footer {
         height: 879px;
@@ -409,24 +492,59 @@ header {
     }
 
     /* main */
+
+    /* instant play section */
+    .instant-play {
+        flex-direction: column;
+        padding: 100px;
+        margin: 0px;
+        gap: 30px;
+    }
+
+    .instant-left {
+        padding: 30px;
+        margin: 0px;
+        text-align: center;
+    }
+    .main {
+        padding-left: 100px;
+        width: 300.833px;
+        height: 350px;
+    }
+    .secondary{
+        width: 159px;
+        height: 182.54;
+        position: relative;
+        right: 380px;
+        top: 30px;
+    }
+
+
     /* gaming option */
     .gaming-option {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        padding: 70px;
+        padding: 50px;
         gap: 20px;
     }
 
     .g-option {
-        gap: 0px;
+        gap: 5px;
         border-radius: 50px;
         color: #0B0223;
         padding: 5px;
+        align-items: center;
     }
+
     .g-option p {
         font-size: 0.85rem;
         font-weight: 600;
     }
+
+    .g-option img {
+        height: 45px;
+    }
+
     /* footer */
     .footer {
         height: 879px;
