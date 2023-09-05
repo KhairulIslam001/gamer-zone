@@ -149,9 +149,39 @@ header {
     margin-top: 20px;
 }
 
+/* main section will start from here */
 
 
 
+/* gaming option section */
+.gaming-option {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 53px;
+    justify-content: center;
+    padding: 120px 160px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+}
+
+.g-option:hover {
+    color: #FF42A5;
+    border-radius: 50px;
+    border: 1.5px solid var(--Linear, #FF42A5);
+    background: #FFF;
+}
+
+.g-option {
+    display: flex;
+    gap: 16px;
+    border-radius: 50px;
+    color: #0B0223;
+    padding: 20px;
+}
+
+.g-option p {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
 
 /* footer section starts from here */
 .footer {
@@ -197,8 +227,6 @@ header {
 .footer-options p {
     margin: 0px;
 }
-
-
 
 .footer-icons {
     flex-shrink: 0;
@@ -301,10 +329,33 @@ header {
         margin-bottom: 50px;
     }
 
+
+
+
+    /* main section */
+    /* gaming option */
+    .gaming-option {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .g-option {
+        gap: 0px;
+        border-radius: 50px;
+        color: #0B0223;
+        padding: 5px;
+    }
+    .g-option p {
+        font-size: 0.65rem;
+        font-weight: 600;
+    }
     /* footer section */
-    .footer{
+    .footer {
         height: 879px;
     }
+
     .footer-title {
         padding: 60px;
     }
@@ -314,19 +365,22 @@ header {
         grid-template-columns: repeat(3, 1fr);
         gap: 35px;
     }
-    .footer-icons{
+
+    .footer-icons {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 85px;
         padding: 50px 90px;
     }
-    .footer-policy{
+
+    .footer-policy {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
         padding: 0px 30px;
     }
-    .footer-text{
+
+    .footer-text {
         margin: 74px 120px;
     }
 }
@@ -354,10 +408,30 @@ header {
         padding: 20px;
     }
 
+    /* main */
+    /* gaming option */
+    .gaming-option {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 70px;
+        gap: 20px;
+    }
+
+    .g-option {
+        gap: 0px;
+        border-radius: 50px;
+        color: #0B0223;
+        padding: 5px;
+    }
+    .g-option p {
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
     /* footer */
-    .footer{
+    .footer {
         height: 879px;
     }
+
     .footer-title {
         padding: 50px;
     }
@@ -367,19 +441,22 @@ header {
         grid-template-columns: repeat(3, 1fr);
         gap: 35px;
     }
-    .footer-icons{
+
+    .footer-icons {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 85px;
         padding: 30px 100px;
     }
-    .footer-policy{
+
+    .footer-policy {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
         padding: 0px 20px;
     }
-    .footer-text{
+
+    .footer-text {
         margin: 0px;
         padding: 60px;
     }
