@@ -422,8 +422,7 @@ header {
     }
 
     nav,
-    .nav-list ul,
-    .instant-play {
+    .nav-list ul{
         flex-direction: column;
     }
 
@@ -438,8 +437,8 @@ header {
         width: 100%;
     }
 
-    .left {
-        padding: 0%;
+    .header-left>.left {
+        padding: 30px;
     }
 
     .header-right img {
@@ -491,16 +490,36 @@ header {
     .online-games{
         flex-direction: column;
     }
-    .og-cards{
+    .online-games>.og-cards{
         display: grid;
-        grid-template-columns: repeat(1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
 
 
     /* instant play */
-
-    
+    .instant-play{
+        flex-direction: column;
+        padding: 0px;
+        margin: opx
+        text-align: center;
+        gap: 50px;
+    }
+    .instant-left{
+        text-align: center;
+        padding: 0px;
+    }
+    .instant-right> .main{
+        height: 350px;
+        width: 60%;
+        padding-left: 100px;
+    }
+    .instant-right> .secondary{
+        height: 200px;
+        width: 40%;
+        left: 15px;
+        top: -160px;
+    }
     /* gaming option */
     .gaming-option {
         display: grid;
@@ -580,35 +599,37 @@ header {
 
     /* main */
 
+    /* online games section starts from here */
+    .og-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
     /* instant play section */
-    .instant-play {
+    .instant-play{
         flex-direction: column;
-        padding: 100px;
+        padding: 0px;
         margin: 0px;
-        gap: 30px;
+        gap: 100px;
     }
-
-    .instant-left {
-        padding: 30px;
-        margin: 0px;
+    .instant-left{
+        margin-top: 100px;
         text-align: center;
+        padding: 0px;
     }
 
-    .main {
-        padding-left: 100px;
-        width: 300.833px;
-        height: 350px;
+    .main{
+        height: 600px;
+        width: 60%;
+        padding-left: 250px;
     }
-
-    .secondary {
-        width: 159px;
-        height: 182.54;
-        position: relative;
-        right: 380px;
-        top: 30px;
+    .secondary{
+        left: 140px;
+        height: 330px;
+        width: 35%;
     }
-
-
     /* gaming option */
     .gaming-option {
         display: grid;
